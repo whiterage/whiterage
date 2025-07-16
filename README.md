@@ -1,6 +1,6 @@
-<h1 align="center">whiterage</h1>
+<h1 align="center">Whiterage</h1>
 <p align="center">
-  backend | системный подход | внутренний код
+  backend • low-level • ai-in-progress • building from the shadows
 </p>
 
 ---
@@ -13,6 +13,15 @@
 пишу игру The Last Flame на своей логике.
 
 ---
+
+### ⚙️ 
+
+![C](https://img.shields.io/badge/-C-333?style=for-the-badge&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python)
+![Godot](https://img.shields.io/badge/-Godot-333?style=for-the-badge&logo=godot-engine)
+![Linux](https://img.shields.io/badge/-Linux-333?style=for-the-badge&logo=linux)
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=for-the-badge&logo=html5&logoColor=white)
+
 
 ### ⚙️ сейчас в работе:
 
@@ -28,8 +37,8 @@
 | название        | стек            | кратко                            |
 |-----------------|------------------|-----------------------------------|
 | `Einar (personal-assistant)` | Python, AI      | управляет, слушает, отвечает       |
-| `2D-TheLastFlame`       | Godot, GDScript | бой, здоровье, генерация уровней  |
-| `string-utils` | C               | свои реализации strlen/strcpy     |
+| [2D-TheLastFlame](https://github.com/whiterage/The-Last-Flame)    | Godot, GDScript | бой, здоровье, генерация уровней  |
+| `[game of life](https://github.com/whiterage/game_of_life)` | C               | свои реализации strlen/strcpy     |
 
 ---
 
