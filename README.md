@@ -6,15 +6,12 @@
 ---
 
 ### 🧠
-
-учусь в школе 21.  
+  
 разбираю C на атомы.  
 разрабатываю своего ai - ассистента.  
 пишу игру The Last Flame на своей логике.
 
 ---
-
-### ⚙️ 
 
 ![C](https://img.shields.io/badge/-C-333?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python)
