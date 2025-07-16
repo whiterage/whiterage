@@ -36,6 +36,7 @@
 | `Einar (personal-assistant)` | Python, AI      | управляет, слушает, отвечает       |
 | [2D-TheLastFlame](https://github.com/whiterage/The-Last-Flame)    | Godot, GDScript | бой, здоровье, генерация уровней  |
 | [update game of life](https://github.com/whiterage/game_of_life) | C  , ncurses             | улучшенная версия game of life   |
+| [Polish Notation](https://github.com/whiterage/rpn-engine-c) | C only | Photomath у тебя в терминале |
 
 ---
 
