@@ -1,0 +1,42 @@
+name: Update Languages Chart
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Generate languages chart
+        env:
+          GH_USERNAME: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTPUT_PATH: assets/languages_donut_ios26_dark.svg
+        run: |
+          python scripts/build_languages_svg.py
+      
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/languages_donut_ios26_dark.svg
+          git diff --staged --quiet || (git commit -m "chore: update languages chart [skip ci]" && git push)
+
