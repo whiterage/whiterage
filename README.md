@@ -1,10 +1,37 @@
-# 💫 About Me:
-👋 Привет! Я backend-разработчик, студент School 21 от Сбера.<br><br>💻 Основной стек:<br>- C / C++ фундамент системного программирования, алгоритмы, структуры данных<br>- Go разработка микросервисов, Telegram-ботов и CRM-систем(пока что, дальше - больше)<br>- SQL  работа с базами данных (PostgreSQL)<br><br>📌 В процессе:<br>- Разрабатываю проекты на C++ (ООП, архитектура, парсеры, контейнеры)<br>- Создал Telegram-бота и на его базе, CRM-систему на Go (в процессе еще парочка очень интересных pet-projects)<br><br>🌍 Интересы:<br>- Backend-архитектура и высоконагруженные сервисы<br>- Алгоритмы и оптимизация<br>- Интеграция сервисов и автоматизация
+<div align="center">
 
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)
+<h1>whiterage</h1>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=whiterage&layout=compact)](https://github.com/whiterage/github-readme-stats)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<p>
+  <a href="https://t.me/whiterage88">🟦</a>
+  <a href="whiterage143388@gmail.com">✉️</a>
+</p>
+
+
+</div>
+
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=go,cpp,c,postgres,docker,kubernetes,git,linux,bash&perline=9" />
+</p>
+
+
+<p align="center">
+  <a href="https://github.com/whiterage/REPO1"><img height="140" src="https://github-readme-stats.vercel.app/api/pin/?username=whiterage&repo=REPO1&theme=transparent&hide_border=true" /></a>
+  <a href="https://github.com/whiterage/REPO2"><img height="140" src="https://github-readme-stats.vercel.app/api/pin/?username=whiterage&repo=REPO2&theme=transparent&hide_border=true" /></a>
+  <a href="https://github.com/whiterage/REPO3"><img height="140" src="https://github-readme-stats.vercel.app/api/pin/?username=whiterage&repo=REPO3&theme=transparent&hide_border=true" /></a>
+</p>
+
+
+<details>
+  <summary>📊</summary>
+  <p>
+    <img height="170" src="https://github-readme-stats.vercel.app/api?username=whiterage&show_icons=true&rank_icon=github&theme=transparent&hide_border=true" />
+    <img height="170" src="https://streak-stats.demolab.com?user=whiterage&theme=transparent&hide_border=true" />
+  </p>
+  <p>
+    <img height="140" src="https://github-readme-stats.vercel.app/api/top-langs/?username=whiterage&layout=compact&theme=transparent&hide_border=true" />
+  </p>
+</details>
