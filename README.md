@@ -21,17 +21,4 @@
   <img src="./assets/divider.png" width="70%" alt="divider">
 </p>
 
-### Projects
-
-- **go-telegram-bot-template** — шаблон Telegram‑бота на Go: структура проекта, DI, конфиги, middleware, PostgreSQL.  
-  https://github.com/whiterage/go-telegram-bot-template
-
-- **3DVIEWER** — настольный просмотрщик каркасных 3D‑моделей.  
-  https://github.com/whiterage/3DVIEWER
-
-- **CPP_STL_Containers** — собственная реализация контейнеров STL с тестами.  
-  https://github.com/whiterage/CPP_STL_Containers
-
----
-
-<sub>Все изображения статичны и хранятся в `./assets`. Никаких внешних сервисов: будет стабильно загружаться в GitHub и в светлой/тёмной теме.</sub>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=whiterage&layout=compact)](https://github.com/whiterage/github-readme-stats)
