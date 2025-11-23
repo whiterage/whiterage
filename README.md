@@ -1,9 +1,8 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner_dark.png">
-  <img src="./assets/banner_light.png" alt="whiterage banner" width="100%">
-</picture>
+<img src="./assets/banner_ios26_dark.png" alt="Whiterage banner" width="100%"/>
+
+<img src="./assets/backend_developer_pulse.gif" alt="Backend Developer" width="60%"/>
 
 </div>
 
@@ -12,13 +11,10 @@
   <a href="mailto:whiterage143388@gmail.com">Email</a>
 </p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack_row_dark.png">
-  <img src="./assets/stack_row_light.png" alt="Stack" width="100%">
-</picture>
-
 <p align="center">
-  <img src="./assets/divider.png" width="70%" alt="divider">
+  <img src="./assets/stack_row_ios26_dark.png" alt="Stack" width="100%"/>
 </p>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=whiterage&layout=compact)](https://github.com/whiterage/github-readme-stats)
+<p align="center">
+  <img src="./assets/languages_donut_ios26_dark.svg" alt="Languages" width="100%"/>
+</p>
