@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg width='1600' height='600' viewBox='0 0 1600 600' fill='none' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <!-- Градиенты -->
+    <linearGradient id='bg' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#0D1117' />
+      <stop offset='100%' stop-color='#161B22' />
+    </linearGradient>
+    
+    <radialGradient id='centerGradient' cx='50%' cy='50%'>
+      <stop offset='0%' stop-color='#1a1f2e' />
+      <stop offset='100%' stop-color='#0D1117' />
+    </radialGradient>
+    
+    <!-- Фильтры -->
+    <filter id='blur' x='-50%' y='-50%' width='200%' height='200%'>
+      <feGaussianBlur stdDeviation='80' />
+    </filter>
+    
+    <filter id='glow' x='-50%' y='-50%' width='200%' height='200%'>
+      <feGaussianBlur stdDeviation='8' />
+    </filter>
+    
+    <filter id='shadow' x='-20%' y='-20%' width='140%' height='140%'>
+      <feGaussianBlur in='SourceAlpha' stdDeviation='3'/>
+      <feOffset dx='0' dy='2' result='offsetblur'/>
+      <feComponentTransfer>
+        <feFuncA type='linear' slope='0.2'/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in='SourceGraphic'/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Фон -->
+  <rect width='100%' height='100%' fill='url(#bg)'/>
+  
+  
+    <!-- Декоративные круги на фоне -->
+    <circle cx='180' cy='100' r='120' fill='#3B82F6' opacity='0.03' filter='url(#blur)' />
+    <circle cx='1420' cy='500' r='150' fill='#A177FF' opacity='0.04' filter='url(#blur)' />
+    <circle cx='200' cy='520' r='100' fill='#10B981' opacity='0.03' filter='url(#blur)' />
+    
+    <!-- Линии декора -->
+    <line x1='720' y1='60' x2='1380' y2='60' stroke='#30363D' stroke-width='2' opacity='0.3' />
+    <line x1='720' y1='540' x2='1380' y2='540' stroke='#30363D' stroke-width='2' opacity='0.3' />
+    
+
+  <!-- Внешнее кольцо с тенью -->
+  <circle cx='450' cy='300' r='233.0' fill='none' 
+          stroke='#30363D' stroke-width='2' opacity='0.15' />
+
+  <!-- Эффекты свечения -->
+  
+            <circle cx='450' cy='300' r='200' fill='none' stroke='#A177FF' stroke-width='54'
+                    stroke-linecap='round'
+                    stroke-dasharray='489.031 1256.637'
+                    stroke-dashoffset='0.000'
+                    opacity='0.3' filter='url(#glow)' />
+
+  <!-- Основные дуги -->
+  
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#A177FF' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='489.031 1256.637'
+                stroke-dashoffset='0.000'
+                opacity='0.9' />
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#3B82F6' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='340.332 1256.637'
+                stroke-dashoffset='-495.315'
+                opacity='0.9' />
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#10B981' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='240.559 1256.637'
+                stroke-dashoffset='-841.930'
+                opacity='0.9' />
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#F59E0B' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='89.269 1256.637'
+                stroke-dashoffset='-1088.772'
+                opacity='0.9' />
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#EF4444' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='53.086 1256.637'
+                stroke-dashoffset='-1184.324'
+                opacity='0.9' />
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#EC4899' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='1.509 1256.637'
+                stroke-dashoffset='-1243.693'
+                opacity='0.9' />
+        <circle cx='450' cy='300' r='200' fill='none' stroke='#8B5CF6' stroke-width='50'
+                stroke-linecap='round'
+                stroke-dasharray='0.000 1256.637'
+                stroke-dashoffset='-1251.485'
+                opacity='0.9' />
+
+  <!-- Внутренний круг с градиентом -->
+  <circle cx='450' cy='300' r='173.0' fill='url(#centerGradient)' 
+          stroke='#30363D' stroke-width='2' opacity='0.5' />
+
+  <!-- Текст в центре -->
+  <g transform='translate(450,300)'>
+    <text x='0' y='-35' text-anchor='middle' font-size='18' font-weight='500'
+          font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+          fill='#8B949E' opacity='0.8'>
+      💻 MOST USED
+    </text>
+    <text x='0' y='5' text-anchor='middle' font-size='32' font-weight='700'
+          font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+          fill='#E6EDF3'>
+      Languages
+    </text>
+    <text x='0' y='35' text-anchor='middle' font-size='16' font-weight='400'
+          font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+          fill='#8B949E' opacity='0.6'>
+      8 languages tracked
+    </text>
+  </g>
+
+  <!-- Заголовок легенды -->
+  <text x='840' y='70' font-size='20' font-weight='700'
+        font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+        fill='#E6EDF3'>
+    📊 Statistics
+  </text>
+
+  <!-- Легенда -->
+  
+        <g transform='translate(820,100)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#A177FF' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>Python</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>265 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>39.4%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='192.34950108409467' height='3' 
+                fill='#A177FF' opacity='0.8' />
+        </g>
+        
+        <g transform='translate(820,162)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#3B82F6' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>Swift</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>185 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>27.6%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='134.60390099812224' height='3' 
+                fill='#3B82F6' opacity='0.8' />
+        </g>
+        
+        <g transform='translate(820,224)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#10B981' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>JavaScript</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>132 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>19.6%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='95.85831979122646' height='3' 
+                fill='#10B981' opacity='0.8' />
+        </g>
+        
+        <g transform='translate(820,286)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#F59E0B' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>HTML</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>51 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>7.6%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='37.1063777877498' height='3' 
+                fill='#F59E0B' opacity='0.8' />
+        </g>
+        
+        <g transform='translate(820,348)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#EF4444' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>CSS</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>32 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>4.7%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='23.055151591723995' height='3' 
+                fill='#EF4444' opacity='0.8' />
+        </g>
+        
+        <g transform='translate(820,410)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#EC4899' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>Shell</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>4 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>0.6%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='3.0261126674247345' height='3' 
+                fill='#EC4899' opacity='0.8' />
+        </g>
+        
+        <g transform='translate(820,472)' class='legend-item'>
+          <!-- Фон карточки с тенью -->
+          <rect x='0' y='0' rx='12' ry='12' width='520' height='52' 
+                fill='#21262D' 
+                stroke='#30363D' 
+                stroke-width='1.5'
+                filter='url(#shadow)' />
+          
+          <!-- Индикатор цвета -->
+          <rect x='16' y='16' rx='6' ry='6' width='20' height='20' fill='#8B5CF6' />
+          
+          <!-- Название языка -->
+          <text x='50' y='32' font-size='18' font-weight='600' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#E6EDF3'>Other</text>
+          
+          <!-- Размер -->
+          <text x='280' y='32' font-size='14' font-weight='400' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#8B949E' opacity='0.8'>3 KB</text>
+          
+          <!-- Процент -->
+          <text x='495' y='32' text-anchor='end' font-size='20' font-weight='700' 
+                font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+                fill='#A177FF'>0.4%</text>
+          
+          <!-- Прогресс бар -->
+          <rect x='16' y='42' rx='2' ry='2' width='488' height='3' 
+                fill='#30363D' opacity='0.3' />
+          <rect x='16' y='42' rx='2' ry='2' width='2.0006360796580855' height='3' 
+                fill='#8B5CF6' opacity='0.8' />
+        </g>
+        
+
+  <!-- Подпись -->
+  <text x='800.0' y='580' text-anchor='middle' font-size='13' 
+        font-family='Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif' 
+        fill='#8B949E' opacity='0.5'>
+    Generated with ❤️ by GitHub Language Stats
+  </text>
+</svg>
