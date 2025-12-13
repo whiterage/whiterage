@@ -2,19 +2,19 @@ name: Update Languages Chart
 
 on:
   schedule:
-    # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:  # Manual trigger
   push:
-    paths:
-      - "scripts/build_languages_svg.py"
-      - ".github/workflows/update-languages.yml"
+    branches:
+      - main
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    # Skip if commit is from GitHub Actions
+    if: "github.event.head_commit == null || !contains(github.event.head_commit.message, '[skip ci]')"
     
     steps:
       - name: Checkout repository
@@ -26,21 +26,21 @@ jobs:
           python-version: '3.11'
       
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
       
       - name: Generate languages chart
         env:
-          GH_USERNAME: whiterage
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OUTPUT_PATH: assets/languages_donut_ios26_dark.svg
-        run: |
-          python scripts/build_languages_svg.py
+        run: python scripts/build_languages_svg.py
       
-      - name: Commit and push if changed
+      - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add assets/languages_donut_ios26_dark.svg
-          git diff --staged --quiet || (git commit -m "chore: update languages chart [skip ci]" && git push)
-
+          git add assets/languages_donut.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update languages chart [skip ci]"
+            git push
+          fi

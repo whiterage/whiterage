@@ -2,15 +2,19 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches:
+      - main
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    # Skip if commit is from GitHub Actions
+    if: "github.event.head_commit == null || !contains(github.event.head_commit.message, '[skip ci]')"
     
     steps:
       - name: Checkout repository
@@ -30,6 +34,9 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add output/github-snake*.svg
-          git commit -m "chore: update snake animation [skip ci]" || exit 0
-          git push
-
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update snake animation [skip ci]"
+            git push
+          fi
