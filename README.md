@@ -126,9 +126,9 @@ func main() {
 <!-- Snake Animation -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/whiterage/whiterage/output/github-snake-animation.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/whiterage/whiterage/output/github-snake-animation.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/whiterage/whiterage/output/github-snake-animation.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./output/github-snake-animation.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./output/github-snake-animation.svg">
+    <img alt="github contribution grid snake animation" src="./output/github-snake-animation.svg">
   </picture>
 </p>
 
