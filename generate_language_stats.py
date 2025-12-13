@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 import os, math, requests, sys
 
-USERNAME = os.getenv("GH_USERNAME") or os.getenv("GITHUB_ACTOR")
+USERNAME = os.getenv("GH_USERNAME") or os.getenv("GITHUB_ACTOR") or "whiterage"
 TOKEN = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN")
 OUTPUT = os.getenv("OUTPUT_PATH", "assets/languages_donut.svg")
 TOP_N = int(os.getenv("TOP_N", "6"))
 INCLUDE_PRIVATE = os.getenv("INCLUDE_PRIVATE", "false").lower() == "true"
-
-if not USERNAME:
-    print("✖ GH_USERNAME is required", file=sys.stderr)
-    sys.exit(1)
 
 HEADERS = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
 API = "https://api.github.com"

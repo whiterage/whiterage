@@ -27,7 +27,7 @@ jobs:
       
       - name: Generate languages chart
         env:
-          GH_USERNAME: ${{ github.repository_owner }}
+          GH_USERNAME: whiterage
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUTPUT_PATH: assets/languages_donut_ios26_dark.svg
         run: |
