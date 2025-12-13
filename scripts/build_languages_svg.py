@@ -3,7 +3,7 @@ import os, math, requests, sys
 
 USERNAME = os.getenv("GH_USERNAME") or os.getenv("GITHUB_ACTOR") or "whiterage"
 TOKEN = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN")
-OUTPUT = os.getenv("OUTPUT_PATH", "assets/languages_donut_ios26_dark.svg")
+OUTPUT = os.getenv("OUTPUT_PATH", "assets/languages_donut.svg")
 TOP_N = int(os.getenv("TOP_N", "5"))
 INCLUDE_PRIVATE = os.getenv("INCLUDE_PRIVATE", "false").lower() == "true"
 
@@ -155,16 +155,23 @@ def make_svg(data):
 
 
 def main():
+    print(f"🔍 Using GitHub username: {USERNAME}")
+    print(f"📁 Output file: {OUTPUT}")
     repos = user_repos(USERNAME)
+    print(f"📦 Found {len(repos)} repositories")
     langs = aggregate_langs(repos)
     if not langs:
+        print("⚠️  No languages found, using defaults")
         langs = {"Go": 1, "C++": 1}
     data = list(langs.items())
+    print(
+        f"📊 Languages: {', '.join([f'{k}: {v}' for k, v in sorted(data, key=lambda x: x[1], reverse=True)[:5]])}"
+    )
     svg = make_svg(data)
     os.makedirs(os.path.dirname(OUTPUT), exist_ok=True)
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"✓ Wrote {OUTPUT}")
+    print(f"✅ Successfully wrote {OUTPUT}")
 
 
 if __name__ == "__main__":

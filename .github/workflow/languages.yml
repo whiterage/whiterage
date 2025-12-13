@@ -6,8 +6,9 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - ".github/workflows/languages.yml"
+      - ".github/workflow/languages.yml"
       - "scripts/build_languages_svg.py"
+      - ".github/workflows/update-languages.yml"
 
 permissions:
   contents: write

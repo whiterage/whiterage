@@ -5,6 +5,10 @@ on:
     # Run daily at 00:00 UTC
     - cron: '0 0 * * *'
   workflow_dispatch: # Allow manual trigger
+  push:
+    paths:
+      - "scripts/build_languages_svg.py"
+      - ".github/workflows/update-languages.yml"
 
 jobs:
   update:
