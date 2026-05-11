@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Whiterage profile hero</title>
+  <desc id="desc">Profile header card for Zakhar Whiterage with backend engineering focus, stack, and contact details.</desc>
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#07101D"/>
+      <stop offset="55%" stop-color="#0C1B2F"/>
+      <stop offset="100%" stop-color="#14263C"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="420" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#11243A"/>
+      <stop offset="100%" stop-color="#0A1424"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#68D5FF"/>
+      <stop offset="100%" stop-color="#FFB84D"/>
+    </linearGradient>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 100) rotate(90) scale(220)">
+      <stop offset="0%" stop-color="#68D5FF" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#68D5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="amberGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1070 530) rotate(90) scale(260)">
+      <stop offset="0%" stop-color="#FFB84D" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#FFB84D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#D7E7F7" stroke-opacity="0.06"/>
+    </pattern>
+    <filter id="blur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#020611" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect x="10" y="10" width="1260" height="620" rx="34" fill="url(#bg)"/>
+  <rect x="10" y="10" width="1260" height="620" rx="34" fill="url(#grid)"/>
+
+  <circle cx="250" cy="100" r="220" fill="url(#blueGlow)" filter="url(#blur)"/>
+  <circle cx="1070" cy="530" r="260" fill="url(#amberGlow)" filter="url(#blur)"/>
+
+  <path d="M74 130H596" stroke="url(#line)" stroke-opacity="0.9"/>
+  <path d="M74 534H610" stroke="#D7E7F7" stroke-opacity="0.12"/>
+  <path d="M720 80V560" stroke="#D7E7F7" stroke-opacity="0.12"/>
+
+  <text x="74" y="92" fill="#8CB7D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" letter-spacing="3.6">GITHUB PROFILE</text>
+  <text x="74" y="208" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="86" font-weight="700" letter-spacing="4">WHITERAGE</text>
+  <text x="78" y="256" fill="#68D5FF" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="600" letter-spacing="1.2">Zakhar / Go Backend Engineer</text>
+  <text x="74" y="322" fill="#D7E7F7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26">Building Go APIs, workers, and backend systems</text>
+  <text x="74" y="360" fill="#D7E7F7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26">that stay readable, measurable, and easy to ship.</text>
+
+  <g transform="translate(74 412)">
+    <rect width="72" height="40" rx="20" fill="#102438" stroke="#68D5FF" stroke-opacity="0.28"/>
+    <text x="36" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Go</text>
+  </g>
+  <g transform="translate(158 412)">
+    <rect width="88" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="44" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">gRPC</text>
+  </g>
+  <g transform="translate(258 412)">
+    <rect width="126" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="63" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">PostgreSQL</text>
+  </g>
+  <g transform="translate(396 412)">
+    <rect width="96" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="48" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Docker</text>
+  </g>
+  <g transform="translate(504 412)">
+    <rect width="84" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="42" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Kafka</text>
+  </g>
+  <g transform="translate(74 464)">
+    <rect width="118" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="59" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">REST APIs</text>
+  </g>
+  <g transform="translate(204 464)">
+    <rect width="84" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="42" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Redis</text>
+  </g>
+  <g transform="translate(300 464)">
+    <rect width="88" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="44" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Linux</text>
+  </g>
+  <g transform="translate(400 464)">
+    <rect width="88" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="44" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Nginx</text>
+  </g>
+  <g transform="translate(500 464)">
+    <rect width="100" height="40" rx="20" fill="#102438" stroke="#D7E7F7" stroke-opacity="0.16"/>
+    <text x="50" y="26" text-anchor="middle" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" font-weight="600">Workers</text>
+  </g>
+
+  <g transform="translate(786 92)" filter="url(#shadow)">
+    <rect width="408" height="140" rx="28" fill="url(#card)" stroke="#D7E7F7" stroke-opacity="0.12"/>
+    <text x="32" y="42" fill="#8CB7D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" letter-spacing="2.4">CURRENT FOCUS</text>
+    <text x="32" y="80" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26" font-weight="700">Go services, APIs,</text>
+    <text x="32" y="110" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26" font-weight="700">and clean service boundaries</text>
+    <text x="32" y="132" fill="#D7E7F7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18">Practical architecture, queues, and observability</text>
+  </g>
+
+  <g transform="translate(786 250)" filter="url(#shadow)">
+    <rect width="408" height="136" rx="28" fill="url(#card)" stroke="#D7E7F7" stroke-opacity="0.12"/>
+    <text x="32" y="42" fill="#8CB7D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" letter-spacing="2.4">TRAJECTORY</text>
+    <text x="32" y="80" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26" font-weight="700">Deeper backend architecture</text>
+    <text x="32" y="110" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26" font-weight="700">for Go-first systems</text>
+    <text x="32" y="130" fill="#D7E7F7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18">Kubernetes, gRPC, and distributed systems</text>
+  </g>
+
+  <g transform="translate(786 402)" filter="url(#shadow)">
+    <rect width="408" height="136" rx="28" fill="url(#card)" stroke="#D7E7F7" stroke-opacity="0.12"/>
+    <text x="32" y="42" fill="#8CB7D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="16" letter-spacing="2.4">BASELINE</text>
+    <text x="32" y="80" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26" font-weight="700">Moscow / UTC+3</text>
+    <text x="32" y="110" fill="#F6F0E3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="26" font-weight="700">Open to collaboration</text>
+    <text x="32" y="130" fill="#D7E7F7" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18">Telegram: t.me/whiterage88</text>
+  </g>
+
+  <text x="74" y="576" fill="#8CB7D8" font-family="Avenir Next, Segoe UI, sans-serif" font-size="18" letter-spacing="2.4">GO SERVICES / CLEAR INTERFACES / MEASURED PERFORMANCE</text>
+</svg>

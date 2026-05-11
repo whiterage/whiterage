@@ -98,12 +98,12 @@ def generate_svg(language_data):
     """Generate SVG chart from language data"""
     # Color palette matching your theme
     colors = [
-        "#6366F1",  # Indigo (your main color)
-        "#A855F7",  # Purple
-        "#38BDF8",  # Sky blue
-        "#10B981",  # Green
-        "#14B8A6",  # Teal
-        "#F59E0B",  # Amber
+        "#68D5FF",  # Cyan
+        "#FFB84D",  # Amber
+        "#7C9BFF",  # Periwinkle
+        "#3DD9B3",  # Mint
+        "#FF7A7A",  # Coral
+        "#B9E769",  # Lime
     ]
 
     # SVG dimensions
@@ -165,14 +165,14 @@ def generate_svg(language_data):
         legends.append(
             f'<g transform="translate({legend_x},{legend_y + i * legend_gap})">'
             f'<rect x="0" y="-2" rx="20" ry="20" width="420" height="40" '
-            f'fill="#ffffff14" />'
+            f'fill="#ffffff10" />'
             f'<circle cx="20" cy="18" r="10" fill="{color}" />'
             f'<text x="46" y="24" font-size="20" '
-            f'font-family="Inter, ui-sans-serif, system-ui, -apple-system" '
-            f'fill="#E2E8F0">{name}</text>'
+            f'font-family="Avenir Next, Segoe UI, sans-serif" '
+            f'fill="#D7E7F7">{name}</text>'
             f'<text x="400" y="24" text-anchor="end" font-size="20" '
-            f'font-family="Inter, ui-sans-serif, system-ui, -apple-system" '
-            f'fill="#EBE4D2">{percentage_text}</text>'
+            f'font-family="Avenir Next, Segoe UI, sans-serif" '
+            f'fill="#F6F0E3">{percentage_text}</text>'
             f"</g>"
         )
 
@@ -181,8 +181,8 @@ def generate_svg(language_data):
 <svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0b1220" />
-      <stop offset="100%" stop-color="#0f172a" />
+      <stop offset="0%" stop-color="#07101D" />
+      <stop offset="100%" stop-color="#12243A" />
     </linearGradient>
     <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="60" />
@@ -190,16 +190,16 @@ def generate_svg(language_data):
   </defs>
 
   <rect width="100%" height="100%" fill="url(#bg)"/>
-  <ellipse cx="{width * 0.5}" cy="{height * 0.9}" rx="{width * 0.45}" ry="{height * 0.4}" fill="#3B82F612" filter="url(#blur)"/>
+  <ellipse cx="{width * 0.5}" cy="{height * 0.9}" rx="{width * 0.45}" ry="{height * 0.4}" fill="#68D5FF14" filter="url(#blur)"/>
 
-  <circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" stroke="#0b1220" stroke-width="{stroke_width + 2}" />
+  <circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" stroke="#07101D" stroke-width="{stroke_width + 2}" />
 
   {''.join(arcs)}
 
   <circle cx="{center_x}" cy="{center_y}" r="{radius - stroke_width / 2}" fill="url(#bg)"/>
 
-  <text x="{center_x}" y="{center_y - 10}" text-anchor="middle" font-size="22" font-family="Inter, ui-sans-serif, system-ui, -apple-system" fill="#EBE4D2" opacity="0.95">Most Used</text>
-  <text x="{center_x}" y="{center_y + 22}" text-anchor="middle" font-size="22" font-family="Inter, ui-sans-serif, system-ui, -apple-system" fill="#EBE4D2" opacity="0.95">Languages</text>
+  <text x="{center_x}" y="{center_y - 10}" text-anchor="middle" font-size="22" font-family="Avenir Next, Segoe UI, sans-serif" fill="#F6F0E3" opacity="0.95">Repository</text>
+  <text x="{center_x}" y="{center_y + 22}" text-anchor="middle" font-size="22" font-family="Avenir Next, Segoe UI, sans-serif" fill="#F6F0E3" opacity="0.95">Language Mix</text>
 
   {''.join(legends)}
 </svg>"""
