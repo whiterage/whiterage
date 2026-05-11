@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://t.me/whiterage88">Telegram</a>
+  <a href="https://t.me/nepravilno88">Telegram</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
   <a href="https://github.com/whiterage?tab=repositories">Repositories</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
