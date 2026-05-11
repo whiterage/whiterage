@@ -37,13 +37,3 @@ explicit APIs over clever abstractions
 small services over tangled boundaries
 measure latency before tuning hot paths
 ```
-
-## Repository Language Mix
-
-<p align="center">
-  <img src="./assets/languages_donut.svg" alt="Repository language mix" width="100%" />
-</p>
-
-<p align="center">
-  If you are building Go services, infra-minded backend products, or internal platform tooling, reach out on Telegram.
-</p>
