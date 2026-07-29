@@ -31,7 +31,7 @@ tools — plus a stubborn interest in implementing algorithms and data structure
 
 ## Stack
 
-| | |
+| Area | Tools |
 | --- | --- |
 | **Languages** | Go, C, C++20 |
 | **Storage** | PostgreSQL, Redis, SQLite |
