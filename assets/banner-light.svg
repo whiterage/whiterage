@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="whiterage — Go backend engineer with a C and C++ foundation">
+  <title>whiterage — Go backend engineer</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .edge { stroke: #D1D9E0; stroke-width: 1.5; }
+    .edge-hot { stroke: #007D9C; stroke-width: 2.5; stroke-linecap: round; }
+    .node { fill: #FFFFFF; stroke: #D1D9E0; stroke-width: 2; }
+    .node-hot { fill: #E6F4F8; stroke: #007D9C; stroke-width: 2.5; }
+  </style>
+
+  <rect width="1280" height="340" rx="14" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="1279" height="339" rx="13.5" fill="none" stroke="#D1D9E0"/>
+
+  <text class="mono" x="80" y="94" fill="#007D9C" font-size="13" letter-spacing="4">GO BACKEND &#183; SYSTEMS</text>
+  <text class="sans" x="80" y="158" fill="#1F2328" font-size="52" font-weight="700">whiterage</text>
+  <text class="sans" x="80" y="198" fill="#40484F" font-size="22">Zakhar &#8212; Go services, with C and C++ underneath.</text>
+  <text class="sans" x="80" y="232" fill="#59636E" font-size="18">APIs, workers and CLIs that stay readable after the first release.</text>
+
+  <g class="mono" font-size="14" fill="#818B98">
+    <text x="80" y="278">Go</text>
+    <text x="126" y="278" fill="#D1D9E0">/</text>
+    <text x="146" y="278">PostgreSQL</text>
+    <text x="252" y="278" fill="#D1D9E0">/</text>
+    <text x="272" y="278">Redis</text>
+    <text x="330" y="278" fill="#D1D9E0">/</text>
+    <text x="350" y="278">Docker</text>
+    <text x="420" y="278" fill="#D1D9E0">/</text>
+    <text x="440" y="278">C</text>
+    <text x="464" y="278" fill="#D1D9E0">/</text>
+    <text x="484" y="278">C++</text>
+  </g>
+
+  <g>
+    <line class="edge" x1="880" y1="120" x2="900" y2="220"/>
+    <line class="edge" x1="900" y1="220" x2="1010" y2="250"/>
+    <line class="edge" x1="1010" y1="250" x2="1080" y2="180"/>
+    <line class="edge" x1="1080" y1="180" x2="1180" y2="110"/>
+    <line class="edge" x1="980" y1="80" x2="900" y2="220"/>
+    <line class="edge" x1="1080" y1="180" x2="980" y2="80"/>
+
+    <line class="edge-hot" x1="880" y1="120" x2="980" y2="80"/>
+    <line class="edge-hot" x1="980" y1="80" x2="1080" y2="180"/>
+    <line class="edge-hot" x1="1080" y1="180" x2="1180" y2="110"/>
+
+    <circle class="node-hot" cx="880" cy="120" r="13"/>
+    <circle class="node-hot" cx="980" cy="80" r="13"/>
+    <circle class="node-hot" cx="1080" cy="180" r="13"/>
+    <circle class="node-hot" cx="1180" cy="110" r="13"/>
+    <circle class="node" cx="900" cy="220" r="11"/>
+    <circle class="node" cx="1010" cy="250" r="11"/>
+
+    <text class="mono" x="1200" y="278" fill="#818B98" font-size="13" text-anchor="end">shortest path</text>
+  </g>
+</svg>
